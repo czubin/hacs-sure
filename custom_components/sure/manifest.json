@@ -1,0 +1,12 @@
+{
+  "domain": "sure",
+  "name": "Sure",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/we-promise/sure",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/we-promise/sure/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
