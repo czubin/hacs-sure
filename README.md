@@ -58,14 +58,11 @@ A lightweight Home Assistant custom integration to display account balances from
      - **API Key:** Paste your generated API key
    - Click **Submit**.
 
-> **Tip:** If the integration doesn't appear in the search list due to browser caching, force-open the setup dialog directly by visiting:
-> ```text
-> http://<YOUR-HA-IP>:8123/config/integrations/dashboard/add?domain=sure
-> ```
-
 ---
 
 ## Lovelace Card Example
+
+![Lovelace Example](image.png)
 
 ```yaml
 type: entities
