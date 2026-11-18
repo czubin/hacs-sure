@@ -1,9 +1,9 @@
-# Sure for Home Assistant
+# Sure Finances Display for Home Assistant
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/default)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2024.1+-blue.svg)](https://www.home-assistant.io/)
 
-A lightweight Home Assistant custom integration to expose account balances from your self-hosted [Sure](https://github.com/we-promise/sure) personal finance instance.
+A lightweight Home Assistant custom integration to display account balances from your self-hosted [Sure](https://github.com/we-promise/sure) personal finance instance.
 
 ---
 
@@ -22,8 +22,8 @@ A lightweight Home Assistant custom integration to expose account balances from 
 
 1. Open **HACS** in Home Assistant.
 2. Click the 3 dots in the top right corner and select **Custom repositories**.
-3. Add this repository URL, choose **Integration** as the category, and click **Add**.
-4. Download **Sure** and restart Home Assistant.
+3. Add `https://github.com/czubin/hacs-sure`, choose **Integration** as the category, and click **Add**.
+4. Search for **Sure Finances Display**, click **Download**, and restart Home Assistant.
 
 ### Method 2: Manual Installation
 
@@ -49,11 +49,19 @@ A lightweight Home Assistant custom integration to expose account balances from 
 
 1. In your **Sure** instance:
    - Go to **Settings** → **API Keys**
-   - Create a key with `read` permissions.
+   - Click **Create API Key** (read scope is sufficient) and copy your key.
 2. In Home Assistant:
-   - Go to **Settings** → **Devices & Services** → **Add Integration** → search for **Sure**
-   - Enter your **Server URL** (e.g. `https://sure.example.com`) and **API Key**
+   - Go to **Settings** → **Devices & Services** → **Add Integration**
+   - Search for **Sure Finances Display**
+   - Fill in:
+     - **URL:** e.g. `https://hostname/` (base URL only, do not include `/api`)
+     - **API Key:** Paste your generated API key
    - Click **Submit**.
+
+> **Tip:** If the integration doesn't appear in the search list due to browser caching, force-open the setup dialog directly by visiting:
+> ```text
+> http://<YOUR-HA-IP>:8123/config/integrations/dashboard/add?domain=sure
+> ```
 
 ---
 

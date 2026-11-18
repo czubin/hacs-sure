@@ -1,6 +1,6 @@
 {
   "domain": "sure",
-  "name": "Sure",
+  "name": "Sure Finances Display",
   "codeowners": [],
   "config_flow": true,
   "documentation": "https://github.com/we-promise/sure",

@@ -34,7 +34,7 @@ async def validate_input(hass, data: dict[str, Any]) -> dict[str, Any]:
         _LOGGER.exception("Unexpected error connecting to Sure: %s", exc)
         return {"error": "unknown"}
 
-    return {"title": "Sure"}
+    return {"title": "Sure Finances Display"}
 
 
 class SureConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):

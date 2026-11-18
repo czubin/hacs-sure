@@ -28,7 +28,7 @@ class SureDataUpdateCoordinator(DataUpdateCoordinator[dict[str, dict[str, Any]]]
         super().__init__(
             hass,
             _LOGGER,
-            name="Sure",
+            name="Sure Finances Display",
             update_interval=timedelta(minutes=scan_interval_minutes),
         )
 

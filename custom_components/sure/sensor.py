@@ -61,7 +61,7 @@ class SureSensor(CoordinatorEntity[SureDataUpdateCoordinator], SensorEntity):
         self._attr_unique_id = f"sure_{account_id}"
         self._attr_device_info = DeviceInfo(
             identifiers={(DOMAIN, entry.entry_id)},
-            name="Sure",
+            name="Sure Finances Display",
             configuration_url=coordinator.client.url,
         )
 
